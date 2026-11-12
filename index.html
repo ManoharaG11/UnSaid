@@ -1,0 +1,67 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UNSAID | Anonymous Confession Wall</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header class="navbar">
+        <h2>UN<span>SAID.</span></h2>
+        <a href="#confession-wall">Explore</a>
+    </header>
+
+    <main>
+        <section class="hero">
+            <p class="tagline">YOUR VOICE. YOUR SECRET. YOUR SPACE.</p>
+            <h1>Say it without<br><span>saying who.</span></h1>
+            <p class="description">
+                A place where your thoughts can be heard,
+                without revealing your identity.
+            </p>
+        </section>
+
+        <section class="write-section">
+            <h2>What's on your mind?</h2>
+            <textarea
+                id="confessionInput"
+                maxlength="300"
+                placeholder="Write something you've never said out loud..."
+            ></textarea>
+
+            <div class="input-footer">
+                <span id="charCount">0 / 300</span>
+                <button id="postButton">Post anonymously ↗</button>
+            </div>
+            <p class="privacy-note">🔒 No name. No account. Just your words.</p>
+        </section>
+
+        <section class="wall-section" id="confession-wall">
+            <div class="wall-heading">
+                <div>
+                    <p class="tagline">THE COMMUNITY WALL</p>
+                    <h2>Unspoken thoughts.</h2>
+                </div>
+                <span id="postCount">0 POSTS</span>
+            </div>
+
+            <div id="confessionList" class="confession-list"></div>
+
+            <button id="clearButton" class="clear-button">
+                Clear all demo posts
+            </button>
+        </section>
+    </main>
+
+    <footer>
+        <h2>UN<span>SAID.</span></h2>
+        <p>Some thoughts deserve a place to exist.</p>
+        <small>Made with curiosity & creativity. © 2026</small>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
